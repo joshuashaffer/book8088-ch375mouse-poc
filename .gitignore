@@ -1,0 +1,5 @@
+*.obj
+*.o
+*.com
+main.exe
+main.com
