@@ -30,6 +30,7 @@ const int16_t max_y = 25;
  * @param c Character to set.
  * @param x X position.
  * @param y Y position.
+ * @param style Style to set.
  * @return  The old character at the given position.
  */
 inline uint8_t set_char(char c, int x, int y, uint8_t style = 0x00) {
@@ -69,7 +70,7 @@ int main(int argc, char *argv[]) {
         if (bytes_read == 0) {
             continue;
         }
-        mouse_report_t *mouse_report = reinterpret_cast<mouse_report_t *>(usb_host.RECV_BUFFER);
+        mouse_report_t *mouse_report = usb_host.p_mouse_report();
 
         set_char(old, x, y);
         x += mouse_report->dx >> 2;

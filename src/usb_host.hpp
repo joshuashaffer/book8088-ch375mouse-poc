@@ -270,6 +270,8 @@ public:
 
     inline usb_dev_descriptor *p_dev_descr() { return reinterpret_cast<usb_dev_descriptor *>(RECV_BUFFER); }
 
+    inline mouse_report_t *p_mouse_report() { return reinterpret_cast<mouse_report_t *>(RECV_BUFFER); }
+
     /**
      *    initHIDDevice
      */
