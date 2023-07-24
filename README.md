@@ -27,4 +27,4 @@ $ wmake
 
 Copy the resulting `mouse.com` file to the compact flash card, plug a basic usb mouse in, and run it on the Book 8088.
 
-<video src="demo.webm" width="640" height="480" controls preload></video>
+<video src="demo.m4v" width="640" height="480" controls preload></video>
